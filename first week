@@ -1,0 +1,25 @@
+Speaker-independent-emotional-voice-conversion-based-on-conditional-VAW-GAN-and-CWT
+This is the implementation of our Interspeech 2020 paper "Converting anyone's emotion: towards speaker-independent emotional voice conversion".
+For This project had been used python language . Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including structured, object-oriented and functional programming.
+Emotional voice conversion aims to convert the emotion of speech from one state to another while preserving the linguistic content and speaker identity. The prior studies on emotional voice conversion are mostly carried out under the assumption that emotion is speaker-dependent. We consider that there is a common code between speakers for emotional expression in a spoken language, therefore, a speaker-independent mapping between emotional states is possible. In this paper, we propose a speaker-independent emotional voice conversion framework, that can convert anyone's emotion without the need for parallel data. We propose a VAW-GAN based encoder-decoder structure to learn the spectrum and prosody mapping. We perform prosody conversion by using continuous wavelet transform (CWT) to model the temporal dependencies. We also investigate the use of F0 as an additional input to the decoder to improve emotion conversion performance. Experiments show that the proposed speaker-independent framework achieves competitive results for both seen and unseen speakers.[1]
+Emotional voice conversion (EVC) is a type of voice conversion (VC) that converts the emotional state of speech from one to another while preserving the linguistic content and speaker identity.[1]
+Model Architecture:
+ 
+Figure 1: The training phase of the proposed VAW-GAN-based EVC. Red boxes are involved in the training, while grey boxes are not.[1]
+Speech is more than just words. It carries emotions of the speaker. Emotion reflects the intent, mood and temperament of the speaker, and plays an important role in decision making and opinion expression.
+The studies prompt us to investigate speech emotions from a speaker independent perspective . Studies have also shown possible ways of speaker-independent emotion representation for both
+seen and unseen speakers over a large multi-speakers emotional corpus, emotion feature extraction and classifiers.
+An encoder-decoder structure, such as VAW-GAN , allows them to learn the emotion-independent representations using the encoder. Instead of CycleGAN, they propose to take advantage of the encoder-decoder structure of VAW-GAN to formulate a speaker-independent emotional voice conversion framework.[1]
+They use two common emotion in three dataset :natural and angry.Actually they conduct emotions from natural to angry. Experiments show that the proposed speaker-independent framework achieves competitive results for both seen and unseen speakers.
+
+
+
+
+
+
+
+
+
+
+
+ [1] Zhou, Kun & Sisman, Berrak & Zhang, Mingyang & Li, Haizhou. (2020). Converting Anyone's Emotion: Towards Speaker-Independent Emotional Voice 
