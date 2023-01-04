@@ -1,0 +1,14 @@
+In 5th week I decide to  run codes of my project and share errors .we installed spyder anaconda for using python later.
+Now we have some codes that existed in github link.we try to run the codes but there is error.firt I install the module with the order:
+'pip install tensorflow==1.8'
+ 
+Figure(1)
+Then we try to run and debug our codes:
+ 
+	Figure(2)
+ 
+Figure(3)
+ 
+Figure (4)
+I cant run my codes succseesfully and I cant proses my codes correctly because of I coudnt install some modules.
+But I try to work on it to remove errors .
