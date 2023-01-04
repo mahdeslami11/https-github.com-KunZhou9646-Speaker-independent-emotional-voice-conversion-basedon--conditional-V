@@ -1,0 +1,40 @@
+In 4th week I decide to explain about dataset and codes of my project .
+My subject that I work on it ,its about Converting Anyone’s Emotion: Towards Speaker-Independent Emotional Voice Conversion. It researched in 2020 with Department of Electrical and Computer Engineering, National University of Singapore.
+In this research , they work python language that you can see libraries here:
+•	Ubuntu 16.04
+•	Python 3.6
+o	Tensorflow-gpu 1.5.0
+o	PyWorld
+o	librosa
+o	soundfile
+o	numpy 1.14.0
+o	sklearn
+o	glob
+o	sprocket-vc
+o	pycwt
+o	scipy
+I use Anaconda program and after that I work with Jupiter notebook.
+1.	Prepare your dataset.
+Please follow the file structure:
+
+training_dir: ./data/wav/training_set/*/*.wav
+
+evaluation_dir ./data/wav/evaluation_set/*/*.wav
+
+For example: "./data/wav/training_set/Angry/0001.wav"
+2.	Activate your virtual enviroment.
+source activate [your env]
+3.	Train VAW-GAN for prosody.
+./train_f0.sh
+# Remember to change the source and target dir in "architecture-vawgan-vcc2016.json"
+4.	Train VAW-GAN for spectrum.
+./train_sp.sh
+# Remember to change the source and target dir in "architecture-vawgan-vcc2016.json"
+5.	Generate the converted emotional speech.
+./convert.sh
+The codes are based on VAW-GAN Voice Conversion: https://github.com/JeremyCCHsu/vae-npvc/tree/vawgan.
+--------------------> Speech Samples (Neutral to Angry) <-------------------
+	Here you can access to the codes that are zip file form:
+ 
+
+
